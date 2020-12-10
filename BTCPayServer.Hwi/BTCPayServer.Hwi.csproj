@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="Version.csproj" Condition="Exists('Version.csproj')" />
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;netcoreapp2.1</TargetFrameworks>
+    <Company>BTCPay Server</Company>
+    <Copyright>Copyright © BTCPay Server</Copyright>
+    <Description>A wrapper library around the hwi bitcoin-core project</Description>
+    <PackageTags>bitcoin,hwi</PackageTags>
+    <PackageProjectUrl>https://github.com/btcpayserver/BTCPayServer.Vault</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/btcpayserver/BTCPayServer.Vault</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <LangVersion>8.0</LangVersion>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="NBitcoin" Version="5.0.13" />
+  </ItemGroup>
+
+</Project>
